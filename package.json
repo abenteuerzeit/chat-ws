@@ -1,0 +1,33 @@
+{
+  "name": "chat-ws",
+  "version": "1.0.0",
+  "description": "To run this application, first open up a terminal. Then, run the command below:",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "author": "abenteuerzeit",
+  "license": "ISC",
+  "dependencies": {
+    "ws": "^7.5.9"
+  },
+  "devDependencies": {
+    "eslint": "^7.31.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.23.4",
+    "nodemon": "^2.0.12"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abenteuerzeit/chat-ws.git"
+  },
+  "keywords": [
+    "chat",
+    "websockets"
+  ],
+  "bugs": {
+    "url": "https://github.com/abenteuerzeit/chat-ws/issues"
+  },
+  "homepage": "https://github.com/abenteuerzeit/chat-ws#readme"
+}
