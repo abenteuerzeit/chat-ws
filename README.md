@@ -5,9 +5,9 @@ To run this application, first open up a terminal. Then, run the command below:
 
 ```sh
 'npm install websocket' or alternatively 'npm install ws'
-node server.js
 ```
 
+node server.js
 
 ```sh
 npm start
