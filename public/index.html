@@ -8,10 +8,10 @@
   <link rel="icon" href="/public/favicon.ico" type="image/x-icon" />
   <!-- You may choose to use the message constants defined in the file below -->
   <script src="/utils/constants.js"></script>
-  <title>ChatCademy</title>
+  <title>ChatGPT</title>
 </head>
 <body>
-  <h2>ChatCademy</h2>
+  <h2>ChatGPT</h2>
   <div class="chat">
     <!-- Messages will appear here -->
   </div>
@@ -67,13 +67,9 @@
         wsClient.close();
       }
       
-      // TODO: 
-      // Exercise 4: Create a new WebSocket connection with the server using the ws protocol.
       const URL = 'ws://localhost:' + PORT;
       wsClient = new WebSocket(URL);
       
-      // TODO:
-      // Exercise 5: Respond to connections by defining the .onopen event handler.
       wsClient.onopen = () => {
         console.log("Connection to the WebSocket server established!");
         const data = {
@@ -83,9 +79,6 @@
         wsClient.send(JSON.stringify(data));
       }
 
-      // TODO:
-      // Exercise 7: Respond to messages from the servery by defining the .onmessage event handler
-      // Exercise 9: Parse custom message types, formatting each message based on the type.
       wsClient.onmessage = (messageEvent) => {
         const message = messageEvent.data;
         const { type, payload } = JSON.parse(message);
@@ -127,9 +120,7 @@
         return;
       }
       
-      // TODO: 
-      // Exercise 6: Send the message from the messageBox to the server
-      // Exercise 9: Send the message in a custom message object with .type and .payload properties
+    
       const data = {
         type: CLIENT.MESSAGE.NEW_MESSAGE,
         payload: { message, username }
