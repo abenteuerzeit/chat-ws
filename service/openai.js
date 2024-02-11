@@ -1,15 +1,15 @@
 const OpenAI = require("openai");
 const CONSTANTS = require("../utils/constants.js");
 const { CLIENT } = CONSTANTS;
-
-let chatHistory = [];
+const { saveMessage, getChatHistory } = require("./mongodb.js");
 
 const openai = new OpenAI({
   apiKey: process.env.OPENAI_API_KEY,
 });
 
-async function prompter(store = chatHistory) {
-  const messagesWithUserInfo = store.map((msg) => {
+async function prompter() {
+  const chatHistory = await getChatHistory();
+  const messagesWithUserInfo = chatHistory.map((msg) => {
     const contentWithUserInfo = `[User: ${msg.userId}] ${msg.content}`;
     return {
       role: msg.role,
@@ -17,25 +17,26 @@ async function prompter(store = chatHistory) {
     };
   });
 
-  return await openai.chat.completions.create({
+  const res = await openai.chat.completions.create({
     model: "gpt-4",
     messages: messagesWithUserInfo,
-  }).choices[0].message.content;
+  })
+  return res.choices[0].message.content;
 }
 
 async function chatWithGPT(payload) {
   try {
-    const gptResponse = await prompter(chatHistory);
+    const res = await prompter();
 
     const gptPayload = {
       ...payload,
-      message: gptResponse,
+      message: res,
       username: "GPT-4",
     };
 
-    chatHistory.push({
+    saveMessage({
       role: "assistant",
-      content: gptResponse,
+      content: res,
       userId: "GPT-4",
     });
 
@@ -43,7 +44,7 @@ async function chatWithGPT(payload) {
       type: CLIENT.MESSAGE.NEW_MESSAGE,
       payload: gptPayload,
     });
-    
+
   } catch (error) {
     console.error("Error getting response from GPT-4:", error);
     return JSON.stringify({ type: CLIENT.MESSAGE.NEW_MESSAGE, error });
@@ -53,6 +54,5 @@ async function chatWithGPT(payload) {
 if (typeof module !== "undefined" && module.exports) {
   module.exports = exports = {
     chatWithGPT,
-    chatHistory,
   };
 }

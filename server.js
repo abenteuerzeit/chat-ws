@@ -3,7 +3,9 @@ const CONSTANTS = require('./utils/constants.js');
 const fs = require('fs');
 const path = require('path');
 const WebSocket = require('ws');
-const { chatWithGPT, chatHistory } = require('./service/openai.js');
+const { chatWithGPT } = require('./service/openai.js');
+const { saveMessage } = require('./service/mongodb.js');
+
 
 const { PORT, CLIENT, SERVER } = CONSTANTS;
 
@@ -43,7 +45,7 @@ wsServer.on('connection', (socket) => {
         broadcast(JSON.stringify(dataWithTime));
         break;
       case CLIENT.MESSAGE.NEW_MESSAGE:
-        chatHistory.push({
+        saveMessage({
           role: "user",
           content: payload.message,
           userId: payload.username
