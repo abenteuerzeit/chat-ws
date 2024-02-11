@@ -9,7 +9,7 @@ const CLIENT = {
   }
 };
 
-export const SERVER = {
+const SERVER = {
   MESSAGE: {
 
   },
