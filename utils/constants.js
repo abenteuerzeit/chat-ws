@@ -1,13 +1,15 @@
-export const PORT = process.env.PORT || 8080;
+const PORT = 8080;
+const HUBNAME = "chatroom";
 
-export const CLIENT = {
+
+const CLIENT = {
   MESSAGE: {
     NEW_USER: 'NEW_USER',
     NEW_MESSAGE: 'NEW_MESSAGE'
   }
 };
 
-export const SERVER = {
+const SERVER = {
   MESSAGE: {
 
   },
@@ -22,5 +24,6 @@ if (typeof module !== "undefined" && module.exports) {
     PORT,
     CLIENT,
     SERVER,
-  }
+    HUBNAME
+    }
 }
