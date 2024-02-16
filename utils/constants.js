@@ -5,7 +5,8 @@ const HUBNAME = "chatroom";
 const CLIENT = {
   MESSAGE: {
     NEW_USER: 'NEW_USER',
-    NEW_MESSAGE: 'NEW_MESSAGE'
+    NEW_MESSAGE: 'NEW_MESSAGE',
+    GREETING: 'GREETING'
   }
 };
 
@@ -14,7 +15,8 @@ const SERVER = {
 
   },
   BROADCAST: {
-    NEW_USER_WITH_TIME: 'NEW_USER_WITH_TIME'
+    NEW_USER_WITH_TIME: 'NEW_USER_WITH_TIME',
+    GREETING: 'GREETING'
   }
 }
 
