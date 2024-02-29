@@ -1,0 +1,178 @@
+repo_name: abenteuerzeit/chat-ws
+report_id: 9a601eaac78cf12ff5f57b4813e935e6
+version: 0.1
+repo_type: Public
+timestamp: '2024-02-29T18:40:04+00:00'
+requested_by: abenteuerzeit
+provider: github
+branch: master
+detected_tools_count: 13
+tools:
+- name: CSS 3
+  description: The latest evolution of the Cascading Style Sheets language
+  website_url: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS3
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/6727/css.png
+  detection_source_url: https://github.com/abenteuerzeit/chat-ws
+  detection_source: Repo Metadata
+- name: JavaScript
+  description: Lightweight, interpreted, object-oriented language with first-class
+    functions
+  website_url: https://developer.mozilla.org/en-US/docs/Web/JavaScript
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/1209/javascript.jpeg
+  detection_source_url: https://github.com/abenteuerzeit/chat-ws
+  detection_source: Repo Metadata
+- name: ExpressJS
+  description: Sinatra inspired web development framework for node.js -- insanely
+    fast, flexible, and simple
+  website_url: http://expressjs.com/
+  version: 4.18.2
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Microframeworks (Backend)
+  image_url: https://img.stackshare.io/service/1163/hashtag.png
+  detection_source_url: https://github.com/abenteuerzeit/chat-ws/blob/master/package-lock.json
+  detection_source: package.json
+  last_updated_by: abenteuerzeit
+  last_updated_on: 2023-01-15 21:55:10.000000000 Z
+- name: ws
+  description: A Node.js WebSocket library
+  website_url: https://github.com/websockets/ws
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Application Hosting
+  sub_category: Realtime Backend / API
+  image_url: https://img.stackshare.io/service/11381/no-img-open-source.png
+  detection_source_url: https://github.com/abenteuerzeit/chat-ws/blob/master/package.json
+  detection_source: package.json
+  last_updated_by: abenteuerzeit
+  last_updated_on: 2023-01-15 21:29:28.000000000 Z
+- name: ESLint
+  description: The fully pluggable JavaScript code quality tool
+  website_url: http://eslint.org/
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Code Review
+  image_url: https://img.stackshare.io/service/3337/Q4L7Jncy.jpg
+  detection_source_url: https://github.com/abenteuerzeit/chat-ws/blob/master/package.json
+  detection_source: package.json
+  last_updated_by: abenteuerzeit
+  last_updated_on: 2023-01-15 21:29:28.000000000 Z
+- name: Git
+  description: Fast, scalable, distributed revision control system
+  website_url: http://git-scm.com/
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Version Control System
+  image_url: https://img.stackshare.io/service/1046/git.png
+  detection_source_url: https://github.com/abenteuerzeit/chat-ws
+  detection_source: Repo Metadata
+- name: nodemon
+  description: A simple monitor script for use during development of a node.js app
+  website_url: http://nodemon.io/
+  version: 2.0.20
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Monitoring
+  sub_category: node.js Application Monitoring
+  image_url: https://img.stackshare.io/service/5577/preview.png
+  detection_source_url: https://github.com/abenteuerzeit/chat-ws/blob/master/package-lock.json
+  detection_source: package.json
+  last_updated_by: abenteuerzeit
+  last_updated_on: 2023-01-15 21:36:19.000000000 Z
+- name: npm
+  description: The package manager for JavaScript.
+  website_url: https://www.npmjs.com/
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Front End Package Manager
+  image_url: https://img.stackshare.io/service/1120/lejvzrnlpb308aftn31u.png
+  detection_source_url: https://github.com/abenteuerzeit/chat-ws/blob/master/package.json
+  detection_source: package.json
+  last_updated_by: abenteuerzeit
+  last_updated_on: 2023-01-15 21:29:28.000000000 Z
+- name: bufferutil
+  description: WebSocket buffer utils
+  package_url: https://www.npmjs.com/bufferutil
+  version: 4.0.7
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/17739/default_2f87d5add351cc79d3471e48bc0dd6f92c1288ad.png
+  detection_source_url: https://github.com/abenteuerzeit/chat-ws/blob/master/package-lock.json
+  detection_source: package.json
+  last_updated_by: abenteuerzeit
+  last_updated_on: 2023-01-15 21:55:10.000000000 Z
+- name: eslint-config-airbnb-base
+  description: Airbnb's base JS ESLint config, following our styleguide
+  package_url: https://www.npmjs.com/eslint-config-airbnb-base
+  version: 14.2.1
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15888/default_7c39a83d4acd952df89b1ebfdb94c8646324fbf1.png
+  detection_source_url: https://github.com/abenteuerzeit/chat-ws/blob/master/package-lock.json
+  detection_source: package.json
+  last_updated_by: abenteuerzeit
+  last_updated_on: 2023-01-15 21:29:28.000000000 Z
+- name: eslint-plugin-import
+  description: Import with sanity
+  package_url: https://www.npmjs.com/eslint-plugin-import
+  version: 2.23.4
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15806/default_98aa227f51aa9d787815ec3fd98d0ab2bfebbb91.png
+  detection_source_url: https://github.com/abenteuerzeit/chat-ws/blob/master/package-lock.json
+  detection_source: package.json
+  last_updated_by: abenteuerzeit
+  last_updated_on: 2023-01-15 21:29:28.000000000 Z
+- name: express
+  description: Fast, unopinionated, minimalist web framework
+  package_url: https://www.npmjs.com/express
+  version: 4.18.2
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15818/default_db4a7791d2f1174547374b9b587bc10fec088a5a.png
+  detection_source_url: https://github.com/abenteuerzeit/chat-ws/blob/master/package-lock.json
+  detection_source: package.json
+  last_updated_by: abenteuerzeit
+  last_updated_on: 2023-01-15 21:55:10.000000000 Z
+- name: utf-8-validate
+  description: Check if a buffer contains valid UTF-8
+  package_url: https://www.npmjs.com/utf-8-validate
+  version: 5.0.10
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/17898/default_3bc64391130859f94a137a7dc6cb87cd54da546b.png
+  detection_source_url: https://github.com/abenteuerzeit/chat-ws/blob/master/package-lock.json
+  detection_source: package.json
+  last_updated_by: abenteuerzeit
+  last_updated_on: 2023-01-15 21:55:10.000000000 Z
